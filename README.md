@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+# Thirumal's Portfolio
 
-You can use the [editor on GitHub](https://github.com/M-Thirumal/thirumal.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to my personal portfolio website, hosted on GitHub Pages. This site showcases my projects across various domains including Java & Spring, Microservices, DevOps, Blockchain, and AI.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Live Site:** [thirumalx.github.io](https://thirumalx.github.io)
 
-### Markdown
+## Features
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- **Modern Design**: A premium dark-themed UI with glassmorphism effects and smooth animations.
+- **Sidebar Navigation**: A dashboard-style layout with a fixed sidebar for easy navigation between categories.
+- **Dynamic Filtering**: Instantly filter projects by category (Microservices, Java, DevOps, etc.).
+- **Real-time Search**: Search for projects by name, description, or technology tags.
+- **Tech Icons**: Visual indicators for the primary technology used in each project (Java, Python, Docker, etc.).
+- **Responsive**: Fully responsive design that adapts to mobile and desktop screens.
 
-```markdown
-Syntax highlighted code block
+## Technology Stack
 
-# Header 1
-## Header 2
-### Header 3
+- **HTML5**: Semantic structure.
+- **CSS3**: Custom styling with CSS Variables, Flexbox, and Grid. No external frameworks used.
+- **JavaScript (Vanilla)**: Dynamic DOM manipulation for rendering projects, filtering, and search logic.
+- **GitHub API**: (Initially used to fetch data, now cached in `data.js` for performance).
 
-- Bulleted
-- List
+## Setup Locally
 
-1. Numbered
-2. List
+To run this website locally on your machine:
 
-**Bold** and _Italic_ and `Code` text
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/thirumalx/thirumalx.github.io.git
+    cd thirumalx.github.io
+    ```
 
-[Link](url) and ![Image](src)
-```
+2.  **Open in Browser**:
+    Simply open the `index.html` file in your preferred web browser.
+    ```bash
+    # macOS
+    open index.html
+    
+    # Linux
+    xdg-open index.html
+    
+    # Windows
+    start index.html
+    ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Project Structure
 
-### Jekyll Themes
+- `index.html`: The main entry point.
+- `style.css`: All styles and animations.
+- `script.js`: Logic for rendering cards, filtering, and search.
+- `data.js`: Contains the list of all repositories and their metadata.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/M-Thirumal/thirumal.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## License
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This project is open source and available under the [MIT License](LICENSE).
