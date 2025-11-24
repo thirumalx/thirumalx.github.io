@@ -1,214 +1,142 @@
 const projects = [
     // Java & Spring Ecosystem
-    {
-        name: "certx",
-        description: "Certificate management and automation tool.",
-        url: "https://github.com/thirumalx/certx",
-        category: "Java & Spring",
-        tags: ["Java", "Spring Boot", "Security"]
-    },
-    {
-        name: "spring-cloud-config-server",
-        description: "Centralized configuration management for distributed systems.",
-        url: "https://github.com/thirumalx/spring-cloud-config-server",
-        category: "Java & Spring",
-        tags: ["Spring Cloud", "Config Server"]
-    },
-    {
-        name: "spring-cloud-config-client",
-        description: "Client application for Spring Cloud Config.",
-        url: "https://github.com/thirumalx/spring-cloud-config-client",
-        category: "Java & Spring",
-        tags: ["Spring Cloud", "Config Client"]
-    },
-    {
-        name: "spring-cloud-gateway",
-        description: "API Gateway built on top of the Spring Ecosystem.",
-        url: "https://github.com/thirumalx/spring-cloud-gateway",
-        category: "Java & Spring",
-        tags: ["Spring Cloud", "Gateway"]
-    },
-    {
-        name: "eureka-server",
-        description: "Service discovery server using Netflix Eureka.",
-        url: "https://github.com/thirumalx/eureka-server",
-        category: "Java & Spring",
-        tags: ["Spring Cloud", "Eureka"]
-    },
-    {
-        name: "eureka-client-1",
-        description: "Sample Eureka client service.",
-        url: "https://github.com/thirumalx/eureka-client-1",
-        category: "Java & Spring",
-        tags: ["Spring Cloud", "Eureka"]
-    },
-    {
-        name: "eureka-client-2",
-        description: "Another sample Eureka client service.",
-        url: "https://github.com/thirumalx/eureka-client-2",
-        category: "Java & Spring",
-        tags: ["Spring Cloud", "Eureka"]
-    },
-    {
-        name: "oauth-authorization-server",
-        description: "OAuth2 Authorization Server implementation.",
-        url: "https://github.com/thirumalx/oauth-authorization-server",
-        category: "Java & Spring",
-        tags: ["OAuth2", "Security", "Spring Security"]
-    },
-    {
-        name: "oauth2-bff",
-        description: "Backend for Frontend (BFF) pattern with OAuth2.",
-        url: "https://github.com/thirumalx/oauth2-bff",
-        category: "Java & Spring",
-        tags: ["OAuth2", "BFF", "Security"]
-    },
-    {
-        name: "spring-boot-transaction",
-        description: "Demonstration of transaction management in Spring Boot.",
-        url: "https://github.com/thirumalx/spring-boot-transaction",
-        category: "Java & Spring",
-        tags: ["Spring Boot", "Transactions"]
-    },
-    {
-        name: "spring-bind-custom-validation",
-        description: "Custom validation binding in Spring.",
-        url: "https://github.com/thirumalx/spring-bind-custom-validation",
-        category: "Java & Spring",
-        tags: ["Spring MVC", "Validation"]
-    },
-    {
-        name: "spring-ai",
-        description: "Exploration of Spring AI capabilities.",
-        url: "https://github.com/thirumalx/spring-ai",
-        category: "Java & Spring",
-        tags: ["AI", "Spring"]
-    },
+    { name: "certx", description: "Certificate management and automation tool.", url: "https://github.com/thirumalx/certx", category: "Java & Spring", tags: ["Java", "Spring Boot"] },
+    { name: "spring-cloud-config-server", description: "Centralized configuration management.", url: "https://github.com/thirumalx/spring-cloud-config-server", category: "Java & Spring", tags: ["Spring Cloud"] },
+    { name: "spring-cloud-config-client", description: "Client for Spring Cloud Config.", url: "https://github.com/thirumalx/spring-cloud-config-client", category: "Java & Spring", tags: ["Spring Cloud"] },
+    { name: "spring-cloud-gateway", description: "API Gateway on Spring Ecosystem.", url: "https://github.com/thirumalx/spring-cloud-gateway", category: "Java & Spring", tags: ["Spring Cloud"] },
+    { name: "eureka-server", description: "Service discovery server.", url: "https://github.com/thirumalx/eureka-server", category: "Java & Spring", tags: ["Spring Cloud"] },
+    { name: "eureka-client-1", description: "Sample Eureka client service.", url: "https://github.com/thirumalx/eureka-client-1", category: "Java & Spring", tags: ["Spring Cloud"] },
+    { name: "eureka-client-2", description: "Another sample Eureka client.", url: "https://github.com/thirumalx/eureka-client-2", category: "Java & Spring", tags: ["Spring Cloud"] },
+    { name: "oauth-authorization-server", description: "OAuth2 Authorization Server.", url: "https://github.com/thirumalx/oauth-authorization-server", category: "Java & Spring", tags: ["OAuth2", "Security"] },
+    { name: "oauth2-bff", description: "Backend for Frontend with OAuth2.", url: "https://github.com/thirumalx/oauth2-bff", category: "Java & Spring", tags: ["OAuth2"] },
+    { name: "spring-boot-transaction", description: "Transaction management demo.", url: "https://github.com/thirumalx/spring-boot-transaction", category: "Java & Spring", tags: ["Spring Boot"] },
+    { name: "spring-bind-custom-validation", description: "Custom validation binding.", url: "https://github.com/thirumalx/spring-bind-custom-validation", category: "Java & Spring", tags: ["Spring MVC"] },
+    { name: "spring-ai", description: "Spring AI capabilities.", url: "https://github.com/thirumalx/spring-ai", category: "Java & Spring", tags: ["AI", "Spring"] },
+    { name: "java-concurrency", description: "Java Concurrency examples.", url: "https://github.com/thirumalx/java-concurrency", category: "Java & Spring", tags: ["Java", "Concurrency"] },
+    { name: "hibernate", description: "Hibernate ORM examples.", url: "https://github.com/thirumalx/hibernate", category: "Java & Spring", tags: ["Hibernate", "JPA"] },
+    { name: "spring-mvc", description: "Spring MVC tutorials.", url: "https://github.com/thirumalx/spring-mvc", category: "Java & Spring", tags: ["Spring MVC"] },
+    { name: "design-pattern", description: "Design patterns in Java.", url: "https://github.com/thirumalx/design-pattern", category: "Java & Spring", tags: ["Java", "Patterns"] },
+    { name: "spring-boot-admin-server", description: "Spring Boot Admin Server.", url: "https://github.com/thirumalx/spring-boot-admin-server", category: "Java & Spring", tags: ["Spring Boot", "Admin"] },
+    { name: "birt-spring-boot", description: "BIRT reporting with Spring Boot.", url: "https://github.com/thirumalx/birt-spring-boot", category: "Java & Spring", tags: ["Spring Boot", "Reporting"] },
+    { name: "circuit-breaker", description: "Circuit Breaker pattern implementation.", url: "https://github.com/thirumalx/circuit-breaker", category: "Java & Spring", tags: ["Resilience4j"] },
+    { name: "server-sent-event", description: "Server Sent Events (SSE) with Spring.", url: "https://github.com/thirumalx/server-sent-event", category: "Java & Spring", tags: ["Spring WebFlux"] },
+    { name: "erm-postgresql-spring-boot", description: "ERM with PostgreSQL and Spring Boot.", url: "https://github.com/thirumalx/erm-postgresql-spring-boot", category: "Java & Spring", tags: ["Spring Boot", "PostgreSQL"] },
+    { name: "websocket-server-push-notification", description: "WebSocket push notifications.", url: "https://github.com/thirumalx/websocket-server-push-notification", category: "Java & Spring", tags: ["WebSocket"] },
+    { name: "spring-boot-tutorial", description: "Comprehensive Spring Boot tutorial.", url: "https://github.com/thirumalx/spring-boot-tutorial", category: "Java & Spring", tags: ["Spring Boot"] },
+    { name: "custom-method-security", description: "Custom method security in Spring.", url: "https://github.com/thirumalx/custom-method-security", category: "Java & Spring", tags: ["Spring Security"] },
+    { name: "erm2springbean", description: "Convert ERM to Spring Beans.", url: "https://github.com/thirumalx/erm2springbean", category: "Java & Spring", tags: ["Tools"] },
+    { name: "spring-boot-graphql", description: "GraphQL with Spring Boot.", url: "https://github.com/thirumalx/spring-boot-graphql", category: "Java & Spring", tags: ["GraphQL"] },
+    { name: "spring-boot-handy", description: "Handy Spring Boot snippets.", url: "https://github.com/thirumalx/spring-boot-handy", category: "Java & Spring", tags: ["Spring Boot"] },
+    { name: "bdd-cucumber-spring-boot", description: "BDD with Cucumber and Spring Boot.", url: "https://github.com/thirumalx/bdd-cucumber-spring-boot", category: "Java & Spring", tags: ["Testing", "Cucumber"] },
+    { name: "pdf-html-thymeleaf", description: "Generate PDF from HTML/Thymeleaf.", url: "https://github.com/thirumalx/pdf-html-thymeleaf", category: "Java & Spring", tags: ["PDF", "Thymeleaf"] },
+    { name: "spring-cloud-function-aws", description: "Spring Cloud Function on AWS.", url: "https://github.com/thirumalx/spring-cloud-function-aws", category: "Java & Spring", tags: ["Serverless", "AWS"] },
+    { name: "spring-cloud-function", description: "Spring Cloud Function examples.", url: "https://github.com/thirumalx/spring-cloud-function", category: "Java & Spring", tags: ["Serverless"] },
+    { name: "resilience4j-eureka-client", description: "Resilience4j with Eureka.", url: "https://github.com/thirumalx/resilience4j-eureka-client", category: "Java & Spring", tags: ["Resilience", "Cloud"] },
+    { name: "generics", description: "Java Generics examples.", url: "https://github.com/thirumalx/generics", category: "Java & Spring", tags: ["Java"] },
+    { name: "mule-examples", description: "MuleSoft examples.", url: "https://github.com/thirumalx/mule-examples", category: "Java & Spring", tags: ["Mule", "Integration"] },
+    { name: "Mulesoft-Box-Connector-Example", description: "MuleSoft Box Connector.", url: "https://github.com/thirumalx/Mulesoft-Box-Connector-Example", category: "Java & Spring", tags: ["Mule", "Box"] },
 
-    // Security & Cryptography
-    {
-        name: "cryptography",
-        description: "Cryptography concepts and implementations.",
-        url: "https://github.com/thirumalx/cryptography",
-        category: "Security",
-        tags: ["Cryptography", "Security"]
-    },
-    {
-        name: "cryptography-playground",
-        description: "Playground for testing cryptographic algorithms.",
-        url: "https://github.com/thirumalx/cryptography-playground",
-        category: "Security",
-        tags: ["Cryptography", "Playground"]
-    },
+    // DevOps & Cloud
+    { name: "docker-files", description: "Collection of Dockerfiles.", url: "https://github.com/thirumalx/docker-files", category: "DevOps & Cloud", tags: ["Docker"] },
+    { name: "DowntimeHQ", description: "Downtime monitoring.", url: "https://github.com/thirumalx/DowntimeHQ", category: "DevOps & Cloud", tags: ["Monitoring"] },
+    { name: "aws-cloud-tutorial", description: "AWS Cloud tutorials.", url: "https://github.com/thirumalx/aws-cloud-tutorial", category: "DevOps & Cloud", tags: ["AWS"] },
+    { name: "aws-service-start-stop-scheduler", description: "Schedule AWS services.", url: "https://github.com/thirumalx/aws-service-start-stop-scheduler", category: "DevOps & Cloud", tags: ["AWS", "Lambda"] },
+    { name: "lets-encrypt-certbot-aws-lambda", description: "Certbot on AWS Lambda.", url: "https://github.com/thirumalx/lets-encrypt-certbot-aws-lambda", category: "DevOps & Cloud", tags: ["AWS", "Security"] },
+    { name: "s3-pre-signed-url", description: "Generate S3 pre-signed URLs.", url: "https://github.com/thirumalx/s3-pre-signed-url", category: "DevOps & Cloud", tags: ["AWS", "S3"] },
+    { name: "cognito-resource-server", description: "AWS Cognito Resource Server.", url: "https://github.com/thirumalx/cognito-resource-server", category: "DevOps & Cloud", tags: ["AWS", "Cognito"] },
+    { name: "aws-iam-user", description: "AWS IAM User management.", url: "https://github.com/thirumalx/aws-iam-user", category: "DevOps & Cloud", tags: ["AWS", "IAM"] },
+    { name: "aws-cloudfront-invalidator", description: "Invalidate CloudFront cache.", url: "https://github.com/thirumalx/aws-cloudfront-invalidator", category: "DevOps & Cloud", tags: ["AWS", "CloudFront"] },
+    { name: "stream-log", description: "Log streaming.", url: "https://github.com/thirumalx/stream-log", category: "DevOps & Cloud", tags: ["Logging"] },
+    { name: "s3_folder_size", description: "Calculate S3 folder size.", url: "https://github.com/thirumalx/s3_folder_size", category: "DevOps & Cloud", tags: ["AWS", "S3"] },
+    { name: "aws-lambda-layer", description: "AWS Lambda Layers.", url: "https://github.com/thirumalx/aws-lambda-layer", category: "DevOps & Cloud", tags: ["AWS", "Lambda"] },
+    { name: "aws-chalice-tutorial", description: "AWS Chalice framework.", url: "https://github.com/thirumalx/aws-chalice-tutorial", category: "DevOps & Cloud", tags: ["AWS", "Python"] },
+    { name: "zappa_app", description: "Serverless Python with Zappa.", url: "https://github.com/thirumalx/zappa_app", category: "DevOps & Cloud", tags: ["AWS", "Python"] },
+    { name: "aws-cloudformation-template", description: "CloudFormation templates.", url: "https://github.com/thirumalx/aws-cloudformation-template", category: "DevOps & Cloud", tags: ["AWS", "IaC"] },
+    { name: "alfresco-backup-and-recovery-tool", description: "Backup tool for Alfresco.", url: "https://github.com/thirumalx/alfresco-backup-and-recovery-tool", category: "DevOps & Cloud", tags: ["Backup"] },
 
-    // DevOps & Tools
-    {
-        name: "docker-files",
-        description: "Collection of useful Dockerfiles.",
-        url: "https://github.com/thirumalx/docker-files",
-        category: "DevOps",
-        tags: ["Docker", "DevOps"]
-    },
-    {
-        name: "bash-script",
-        description: "Useful Bash scripts for automation.",
-        url: "https://github.com/thirumalx/bash-script",
-        category: "DevOps",
-        tags: ["Bash", "Scripting"]
-    },
-    {
-        name: "db-env-diff-tool",
-        description: "Tool to compare database environments.",
-        url: "https://github.com/thirumalx/db-env-diff-tool",
-        category: "DevOps",
-        tags: ["Database", "Tools"]
-    },
-    {
-        name: "excel-to-ics",
-        description: "Convert Excel schedules to ICS calendar format.",
-        url: "https://github.com/thirumalx/excel-to-ics",
-        category: "DevOps",
-        tags: ["Tools", "Conversion"]
-    },
-    {
-        name: "DowntimeHQ",
-        description: "Downtime monitoring and management.",
-        url: "https://github.com/thirumalx/DowntimeHQ",
-        category: "DevOps",
-        tags: ["Monitoring", "Ops"]
-    },
+    // Database
+    { name: "anchor-modeling-tutorial", description: "Anchor Modeling database technique.", url: "https://github.com/thirumalx/anchor-modeling-tutorial", category: "Database", tags: ["Modeling"] },
+    { name: "postgresql", description: "PostgreSQL tips and examples.", url: "https://github.com/thirumalx/postgresql", category: "Database", tags: ["PostgreSQL"] },
+    { name: "db-env-diff-tool", description: "Compare database environments.", url: "https://github.com/thirumalx/db-env-diff-tool", category: "Database", tags: ["Tools"] },
+    { name: "primary_replica_database", description: "Primary-Replica DB setup.", url: "https://github.com/thirumalx/primary_replica_database", category: "Database", tags: ["Architecture"] },
+    { name: "graph_guide", description: "Guide to Graph Databases.", url: "https://github.com/thirumalx/graph_guide", category: "Database", tags: ["Graph"] },
+    { name: "neo4j-tutorial", description: "Neo4j tutorial.", url: "https://github.com/thirumalx/neo4j-tutorial", category: "Database", tags: ["Neo4j"] },
+    { name: "gremlin-dsl", description: "Gremlin DSL for graph DBs.", url: "https://github.com/thirumalx/gremlin-dsl", category: "Database", tags: ["Gremlin"] },
+    { name: "gremlin-functions", description: "Useful Gremlin functions.", url: "https://github.com/thirumalx/gremlin-functions", category: "Database", tags: ["Gremlin"] },
+    { name: "zookeeper", description: "Apache Zookeeper.", url: "https://github.com/thirumalx/zookeeper", category: "Database", tags: ["Distributed"] },
+    { name: "redi-cache", description: "Redis caching.", url: "https://github.com/thirumalx/redi-cache", category: "Database", tags: ["Redis"] },
+    { name: "graph_in_postgresql", description: "Graph data in PostgreSQL.", url: "https://github.com/thirumalx/graph_in_postgresql", category: "Database", tags: ["PostgreSQL"] },
+    { name: "r2dbc", description: "Reactive Relational Database Connectivity.", url: "https://github.com/thirumalx/r2dbc", category: "Database", tags: ["Reactive"] },
+    { name: "audit-trigger", description: "Database audit triggers.", url: "https://github.com/thirumalx/audit-trigger", category: "Database", tags: ["SQL"] },
+    { name: "database", description: "General database resources.", url: "https://github.com/thirumalx/database", category: "Database", tags: ["DB"] },
 
     // Web & Full Stack
-    {
-        name: "auth-service-ui",
-        description: "User Interface for the Auth Service.",
-        url: "https://github.com/thirumalx/auth-service-ui",
-        category: "Web",
-        tags: ["UI", "Auth"]
-    },
-    {
-        name: "opencalendar",
-        description: "Open source calendar application.",
-        url: "https://github.com/thirumalx/opencalendar",
-        category: "Web",
-        tags: ["Calendar", "Web App"]
-    },
-    {
-        name: "html-css-javascript",
-        description: "Web development experiments and snippets.",
-        url: "https://github.com/thirumalx/html-css-javascript",
-        category: "Web",
-        tags: ["HTML", "CSS", "JS"]
-    },
-    {
-        name: "selenium",
-        description: "Browser automation tests with Selenium.",
-        url: "https://github.com/thirumalx/selenium",
-        category: "Web",
-        tags: ["Testing", "Selenium"]
-    },
+    { name: "auth-service-ui", description: "UI for Auth Service.", url: "https://github.com/thirumalx/auth-service-ui", category: "Web & Full Stack", tags: ["UI"] },
+    { name: "opencalendar", description: "Open source calendar app.", url: "https://github.com/thirumalx/opencalendar", category: "Web & Full Stack", tags: ["App"] },
+    { name: "html-css-javascript", description: "Web dev experiments.", url: "https://github.com/thirumalx/html-css-javascript", category: "Web & Full Stack", tags: ["HTML/CSS/JS"] },
+    { name: "selenium", description: "Browser automation tests.", url: "https://github.com/thirumalx/selenium", category: "Web & Full Stack", tags: ["Testing"] },
+    { name: "url-shorten", description: "URL Shortener service.", url: "https://github.com/thirumalx/url-shorten", category: "Web & Full Stack", tags: ["App"] },
+    { name: "bulk-email-ui", description: "UI for bulk email sender.", url: "https://github.com/thirumalx/bulk-email-ui", category: "Web & Full Stack", tags: ["UI"] },
+    { name: "react-tutorial", description: "React JS tutorial.", url: "https://github.com/thirumalx/react-tutorial", category: "Web & Full Stack", tags: ["React"] },
+    { name: "d3js-tutorial", description: "Data visualization with D3.js.", url: "https://github.com/thirumalx/d3js-tutorial", category: "Web & Full Stack", tags: ["D3.js"] },
+    { name: "flask-learn", description: "Learning Flask (Python web).", url: "https://github.com/thirumalx/flask-learn", category: "Web & Full Stack", tags: ["Python", "Flask"] },
+    { name: "flask-quick-reference", description: "Flask cheat sheet.", url: "https://github.com/thirumalx/flask-quick-reference", category: "Web & Full Stack", tags: ["Python", "Flask"] },
+    { name: "www.thirumal.tech", description: "Source for personal website.", url: "https://github.com/thirumalx/www.thirumal.tech", category: "Web & Full Stack", tags: ["Website"] },
 
-    // Learning & Tutorials
-    {
-        name: "system-design",
-        description: "Resources and notes on System Design.",
-        url: "https://github.com/thirumalx/system-design",
-        category: "Learning",
-        tags: ["System Design", "Architecture"]
-    },
-    {
-        name: "java-learning",
-        description: "Java learning path and examples.",
-        url: "https://github.com/thirumalx/java-learning",
-        category: "Learning",
-        tags: ["Java", "Tutorials"]
-    },
-    {
-        name: "anchor-modeling-tutorial",
-        description: "Tutorial on Anchor Modeling database technique.",
-        url: "https://github.com/thirumalx/anchor-modeling-tutorial",
-        category: "Learning",
-        tags: ["Database", "Modeling"]
-    },
-    {
-        name: "postgresql",
-        description: "PostgreSQL tips, tricks, and examples.",
-        url: "https://github.com/thirumalx/postgresql",
-        category: "Learning",
-        tags: ["PostgreSQL", "Database"]
-    },
-    {
-        name: "linux-guide",
-        description: "Guide to Linux commands and administration.",
-        url: "https://github.com/thirumalx/linux-guide",
-        category: "Learning",
-        tags: ["Linux", "OS"]
-    },
-    {
-        name: "installation_guide",
-        description: "Installation guides for various software.",
-        url: "https://github.com/thirumalx/installation_guide",
-        category: "Learning",
-        tags: ["Guides", "Setup"]
-    }
+    // Security
+    { name: "cryptography", description: "Cryptography concepts.", url: "https://github.com/thirumalx/cryptography", category: "Security", tags: ["Crypto"] },
+    { name: "cryptography-playground", description: "Crypto algorithms playground.", url: "https://github.com/thirumalx/cryptography-playground", category: "Security", tags: ["Crypto"] },
+    { name: "pwned-password", description: "Check pwned passwords.", url: "https://github.com/thirumalx/pwned-password", category: "Security", tags: ["Security"] },
+    { name: "oauth-resource-server", description: "OAuth2 Resource Server.", url: "https://github.com/thirumalx/oauth-resource-server", category: "Security", tags: ["OAuth2"] },
+    { name: "authorize-server", description: "Authorization Server.", url: "https://github.com/thirumalx/authorize-server", category: "Security", tags: ["Auth"] },
+    { name: "DecodeCaptcha", description: "Captcha decoding tools.", url: "https://github.com/thirumalx/DecodeCaptcha", category: "Security", tags: ["Tools"] },
+
+    // Blockchain
+    { name: "tezos", description: "Tezos blockchain resources.", url: "https://github.com/thirumalx/tezos", category: "Blockchain", tags: ["Tezos"] },
+    { name: "near", description: "NEAR protocol resources.", url: "https://github.com/thirumalx/near", category: "Blockchain", tags: ["NEAR"] },
+    { name: "avalanche", description: "Avalanche blockchain.", url: "https://github.com/thirumalx/avalanche", category: "Blockchain", tags: ["Avalanche"] },
+    { name: "polkadot", description: "Polkadot blockchain.", url: "https://github.com/thirumalx/polkadot", category: "Blockchain", tags: ["Polkadot"] },
+    { name: "blockchain", description: "General blockchain concepts.", url: "https://github.com/thirumalx/blockchain", category: "Blockchain", tags: ["Crypto"] },
+    { name: "cosmos", description: "Cosmos blockchain.", url: "https://github.com/thirumalx/cosmos", category: "Blockchain", tags: ["Cosmos"] },
+    { name: "binance-staking-alert", description: "Alerts for Binance staking.", url: "https://github.com/thirumalx/binance-staking-alert", category: "Blockchain", tags: ["Binance"] },
+
+    // AI & Data Science
+    { name: "machine-learning", description: "Machine Learning resources.", url: "https://github.com/thirumalx/machine-learning", category: "AI & Data Science", tags: ["ML"] },
+    { name: "neural-networks-and-deep-learning", description: "Neural Networks guide.", url: "https://github.com/thirumalx/neural-networks-and-deep-learning", category: "AI & Data Science", tags: ["DL"] },
+    { name: "jupyter", description: "Jupyter notebooks.", url: "https://github.com/thirumalx/jupyter", category: "AI & Data Science", tags: ["Data Science"] },
+    { name: "trackml-library", description: "Library for tracking ML experiments.", url: "https://github.com/thirumalx/trackml-library", category: "AI & Data Science", tags: ["ML"] },
+    { name: "numerical_analysis", description: "Numerical analysis algorithms.", url: "https://github.com/thirumalx/numerical_analysis", category: "AI & Data Science", tags: ["Math"] },
+    { name: "CosmicWatch-Desktop-Muon-Detector", description: "Muon detector software.", url: "https://github.com/thirumalx/CosmicWatch-Desktop-Muon-Detector", category: "AI & Data Science", tags: ["Physics"] },
+
+    // OS & Scripting
+    { name: "linux-guide", description: "Guide to Linux commands.", url: "https://github.com/thirumalx/linux-guide", category: "OS & Scripting", tags: ["Linux"] },
+    { name: "bash-script", description: "Useful Bash scripts.", url: "https://github.com/thirumalx/bash-script", category: "OS & Scripting", tags: ["Bash"] },
+    { name: "installation_guide", description: "Software installation guides.", url: "https://github.com/thirumalx/installation_guide", category: "OS & Scripting", tags: ["Setup"] },
+    { name: "shell_script", description: "Shell scripting examples.", url: "https://github.com/thirumalx/shell_script", category: "OS & Scripting", tags: ["Shell"] },
+
+    // Learning & Misc
+    { name: "system-design", description: "System Design resources.", url: "https://github.com/thirumalx/system-design", category: "Learning & Misc", tags: ["Architecture"] },
+    { name: "java-learning", description: "Java learning path.", url: "https://github.com/thirumalx/java-learning", category: "Learning & Misc", tags: ["Java"] },
+    { name: "excel-to-ics", description: "Excel to ICS converter.", url: "https://github.com/thirumalx/excel-to-ics", category: "Learning & Misc", tags: ["Tools"] },
+    { name: "bar-qr-code", description: "Barcode and QR code generation.", url: "https://github.com/thirumalx/bar-qr-code", category: "Learning & Misc", tags: ["Tools"] },
+    { name: "Project-Blueprints", description: "Blueprints for various projects.", url: "https://github.com/thirumalx/Project-Blueprints", category: "Learning & Misc", tags: ["Planning"] },
+    { name: "automate-cumbersome-routine-work", description: "Automation scripts.", url: "https://github.com/thirumalx/automate-cumbersome-routine-work", category: "Learning & Misc", tags: ["Automation"] },
+    { name: "resume", description: "Resume templates/resources.", url: "https://github.com/thirumalx/resume", category: "Learning & Misc", tags: ["Career"] },
+    { name: "M-Thirumal", description: "Personal profile repo.", url: "https://github.com/thirumalx/M-Thirumal", category: "Learning & Misc", tags: ["Profile"] },
+    { name: "handy-programs", description: "Collection of handy programs.", url: "https://github.com/thirumalx/handy-programs", category: "Learning & Misc", tags: ["Tools"] },
+    { name: "CustomSmsSender", description: "SMS sending utility.", url: "https://github.com/thirumalx/CustomSmsSender", category: "Learning & Misc", tags: ["Tools"] },
+    { name: "concepts", description: "General CS concepts.", url: "https://github.com/thirumalx/concepts", category: "Learning & Misc", tags: ["CS"] },
+    { name: "rust_tutorial", description: "Rust programming tutorial.", url: "https://github.com/thirumalx/rust_tutorial", category: "Learning & Misc", tags: ["Rust"] },
+    { name: "futurology", description: "Notes on futurology.", url: "https://github.com/thirumalx/futurology", category: "Learning & Misc", tags: ["Notes"] },
+    { name: "software_architect_solution", description: "Software architecture solutions.", url: "https://github.com/thirumalx/software_architect_solution", category: "Learning & Misc", tags: ["Architecture"] },
+    { name: "coding-best-practices", description: "Best practices in coding.", url: "https://github.com/thirumalx/coding-best-practices", category: "Learning & Misc", tags: ["Best Practices"] },
+    { name: "math", description: "Mathematics resources.", url: "https://github.com/thirumalx/math", category: "Learning & Misc", tags: ["Math"] },
+    { name: "book", description: "Book recommendations/notes.", url: "https://github.com/thirumalx/book", category: "Learning & Misc", tags: ["Books"] },
+    { name: "etag", description: "Understanding ETags.", url: "https://github.com/thirumalx/etag", category: "Learning & Misc", tags: ["Web"] },
+    { name: "asciidoc-guide", description: "Guide to AsciiDoc.", url: "https://github.com/thirumalx/asciidoc-guide", category: "Learning & Misc", tags: ["Docs"] },
+    { name: "philosophy", description: "Philosophical notes.", url: "https://github.com/thirumalx/philosophy", category: "Learning & Misc", tags: ["Notes"] },
+    { name: "pdf-book", description: "PDF book collection.", url: "https://github.com/thirumalx/pdf-book", category: "Learning & Misc", tags: ["Books"] },
+    { name: "link", description: "Useful links collection.", url: "https://github.com/thirumalx/link", category: "Learning & Misc", tags: ["Resources"] },
+    { name: "messenger", description: "Messenger app concept.", url: "https://github.com/thirumalx/messenger", category: "Learning & Misc", tags: ["App"] },
+    { name: "coding-interview-university", description: "Interview prep materials.", url: "https://github.com/thirumalx/coding-interview-university", category: "Learning & Misc", tags: ["Interview"] }
 ];
