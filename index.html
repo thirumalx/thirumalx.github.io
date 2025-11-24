@@ -1,256 +1,51 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-    <title>திருமால்</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thirumal Documentations">
-    <meta name="author" content="Thirumal">    
-    <link rel="shortcut icon" href="favicon.png"> 
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <title>Thirumal's Portfolio</title>
+    <meta name="description" content="Portfolio of Thirumal's GitHub projects, categorized by technology and purpose.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <header>
+        <h1>Thirumal</h1>
+        <p class="subtitle">Software Developer | Java & Spring Ecosystem | Security | DevOps</p>
+        
+        <div class="social-links">
+            <a href="https://github.com/thirumalx" target="_blank" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="mailto:racetortoise@gmail.com" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+        </div>
 
-</head> 
+        <div class="controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Java">Java & Spring</button>
+            <button class="filter-btn" data-filter="Security">Security</button>
+            <button class="filter-btn" data-filter="DevOps">DevOps</button>
+            <button class="filter-btn" data-filter="Web">Web</button>
+            <button class="filter-btn" data-filter="Learning">Learning</button>
+        </div>
+    </header>
 
-<body>    
-    <header class="header fixed-top">	    
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Thirumal<span class="text-alt"> Docs</span></span></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="https://github.com/M-Thirumal/"><i class="fab fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://twitter.com/_thirumal"><i class="fab fa-twitter fa-fw"></i></a></li>
-		                <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li> -->
-		            </ul><!--//social-list-->
-		            <!-- <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-4-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a> -->
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-    
-    
-    <div class="page-header theme-bg-dark py-5 text-center position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-		    <h1 class="page-heading single-col-max mx-auto">Documentation</h1>
-		    <!-- <div class="page-intro single-col-max mx-auto">Everything you need to get your software documentation online.</div> -->
-		    <!-- <div class="main-search-box pt-3 d-block mx-auto">
-                 <form class="search-form w-100">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-        </div> -->
-	    </div>
-    </div><!--//page-header-->
-    <div class="page-content">
-	    <div class="container">
-		    <div class="docs-overview py-5">
-			    <div class="row justify-content-center">
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-map-signs"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Website in AWS S3 &#128003</span>
-							    </h5>
-							    <div class="card-text">
-								    Host a single page or static Website on AWS S3 with Let's Encrypt 
-							    </div>
-							    <a class="card-link-mask" href="aws-s3-website-host.html#section-1"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-arrow-down"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Installation &#129421</span>
-							    </h5>
-							    <div class="card-text">
-								    Installation Guide for PostgreSQL, PgAdmin4, PgModeler, etc..
-							    </div>
-							    <a class="card-link-mask" href="https://m-thirumal.github.io/installation_guide/"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-box fa-fw"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Let's Encrypt &#128006</span>
-							    </h5>
-							    <div class="card-text">
-								    Generate Free TLS/SSL for your web site using Let's Encrypt
-								</div>
-							    <a class="card-link-mask" href="tls/lets-encrypt.html"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-cogs fa-fw"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Architecture &#129413</span>
-							    </h5>
-							    <div class="card-text">
-								   Data Modeling, API Architecture, Deployment Model, MicroService Architecture,..
-								</div>
-							    <a class="card-link-mask" href="architecture/architecture.html"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-										<i class="fas fa-database"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">PostgreSQL &#128024</span>
-							    </h5>
-							    <div class="card-text">
-								    PostgreSQL Installation, Tuning, Pagination, CTE
-								</div>
-							    <a class="card-link-mask" href="database/postgresql/postgresql.html"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fab fa-connectdevelop"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Graph Database &#128376</span>
-							    </h5>
-							    <div class="card-text">
-								    Graph Concepts
-								</div>
-							    <a class="card-link-mask" href="graph/graph.html"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-										<i class="fas fa-tools"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Machine Learning &#128014</span>
-							    </h5>
-							    <div class="card-text">
-								    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-7"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-book-reader"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Mathematics &#129504;</span>
-							    </h5>
-							    <div class="card-text">
-								    Calculus &#8706;&#8748;
-								</div>
-							    <a class="card-link-mask" href="https://github.com/M-Thirumal/math"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-lightbulb"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">FAQs &#129423</span>
-							    </h5>
-							    <div class="card-text">
-								    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-9"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-			    </div><!--//row-->
-		    </div><!--//container-->
-		</div><!--//container-->
-    </div><!--//page-content-->
+    <main>
+        <div id="projects-grid" class="projects-grid">
+            <!-- Projects will be inserted here by JS -->
+        </div>
+    </main>
 
-    <section class="cta-section text-center py-5 theme-bg-dark position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-		    <h3 class="mb-2 text-white mb-3"><i>எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள்<br>மெய்ப்பொருள் காண்ப தறிவு.</i></h3>
-		    <!-- <div class="section-intro text-white mb-3 single-col-max mx-auto">Want to launch your software project and start getting traction from your target users? Check out our premium <a class="text-white" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/">Bootstrap 4 startup template CoderPro</a>! It has everything you need to promote your product.</div>
-		    <div class="pt-3 text-center">
-			    <a class="btn btn-light" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/">Get CoderPro<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-		    </div> -->
-	    </div>
-    </section><!--//cta-section-->
-
-               
-    
-    <footer class="footer">
-
-	    <div class="footer-bottom text-center py-5">
-		    
-		    <ul class="social-list list-unstyled pb-4 mb-0">
-			    <li class="list-inline-item"><a href="https://github.com/M-Thirumal/"><i class="fab fa-github fa-fw"></i></a></li> 
-	            <li class="list-inline-item"><a href="https://twitter.com/_thirumal"><i class="fab fa-twitter fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
-	        </ul><!--//social-list-->
-	        
-	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Document for all by <a class="theme-link" href="#" target="_blank">Thirumal</a></small>
-            
-	        
-	    </div>
-	    
+    <footer>
+        <p>&copy; 2025 Thirumal. Built with Vanilla JS & CSS.</p>
     </footer>
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
 
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
-</html> 
-
+</html>
