@@ -131,15 +131,29 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const tagsHtml = project.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
         const icon = getTechIcon(project);
+        
+        let linksHtml = '';
+        if (project.homepage) {
+            linksHtml += `
+                <a href="${project.homepage}" target="_blank" class="external-link" aria-label="Live Demo" title="Live Demo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </a>
+            `;
+        }
+        linksHtml += `
+            <a href="${project.url}" target="_blank" class="external-link" aria-label="View Source" title="View Source">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+        `;
 
         card.innerHTML = `
             <div class="card-header">
                 <div class="tech-icon">
                     ${icon}
                 </div>
-                <a href="${project.url}" target="_blank" class="external-link" aria-label="View Source">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
+                <div class="card-links">
+                    ${linksHtml}
+                </div>
             </div>
             <h3 class="project-title">${project.name}</h3>
             <p class="project-desc">${project.description}</p>

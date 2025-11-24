@@ -57,11 +57,11 @@ const projects = [
     { name: "alfresco-backup-and-recovery-tool", description: "Backup tool for Alfresco.", url: "https://github.com/thirumalx/alfresco-backup-and-recovery-tool", category: "DevOps & Cloud", tags: ["Backup"] },
 
     // Database
-    { name: "anchor-modeling-tutorial", description: "Anchor Modeling database technique.", url: "https://github.com/thirumalx/anchor-modeling-tutorial", category: "Database", tags: ["Modeling"] },
+    { name: "anchor-modeling-tutorial", description: "Anchor Modeling database technique.", url: "https://github.com/thirumalx/anchor-modeling-tutorial", homepage: "https://thirumalx.github.io/anchor-modeling-tutorial/", category: "Database", tags: ["Modeling"] },
     { name: "postgresql", description: "PostgreSQL tips and examples.", url: "https://github.com/thirumalx/postgresql", category: "Database", tags: ["PostgreSQL"] },
     { name: "db-env-diff-tool", description: "Compare database environments.", url: "https://github.com/thirumalx/db-env-diff-tool", category: "Database", tags: ["Tools"] },
     { name: "primary_replica_database", description: "Primary-Replica DB setup.", url: "https://github.com/thirumalx/primary_replica_database", category: "Database", tags: ["Architecture"] },
-    { name: "graph_guide", description: "Guide to Graph Databases.", url: "https://github.com/thirumalx/graph_guide", category: "Database", tags: ["Graph"] },
+    { name: "graph_guide", description: "Guide to Graph Databases.", url: "https://github.com/thirumalx/graph_guide", homepage: "https://thirumalx.github.io/graph_guide/", category: "Database", tags: ["Graph"] },
     { name: "neo4j-tutorial", description: "Neo4j tutorial.", url: "https://github.com/thirumalx/neo4j-tutorial", category: "Database", tags: ["Neo4j"] },
     { name: "gremlin-dsl", description: "Gremlin DSL for graph DBs.", url: "https://github.com/thirumalx/gremlin-dsl", category: "Database", tags: ["Gremlin"] },
     { name: "gremlin-functions", description: "Useful Gremlin functions.", url: "https://github.com/thirumalx/gremlin-functions", category: "Database", tags: ["Gremlin"] },
@@ -73,25 +73,25 @@ const projects = [
     { name: "database", description: "General database resources.", url: "https://github.com/thirumalx/database", category: "Database", tags: ["DB"] },
 
     // Web & Full Stack
-    { name: "auth-service-ui", description: "UI for Auth Service.", url: "https://github.com/thirumalx/auth-service-ui", category: "Web & Full Stack", tags: ["UI"] },
-    { name: "opencalendar", description: "Open source calendar app.", url: "https://github.com/thirumalx/opencalendar", category: "Web & Full Stack", tags: ["App"] },
-    { name: "html-css-javascript", description: "Web dev experiments.", url: "https://github.com/thirumalx/html-css-javascript", category: "Web & Full Stack", tags: ["HTML/CSS/JS"] },
+    { name: "auth-service-ui", description: "UI for Auth Service.", url: "https://github.com/thirumalx/auth-service-ui", homepage: "https://thirumalx.github.io/auth-service-ui/", category: "Web & Full Stack", tags: ["UI"] },
+    { name: "opencalendar", description: "Open source calendar app.", url: "https://github.com/thirumalx/opencalendar", homepage: "https://thirumalx.github.io/opencalendar/", category: "Web & Full Stack", tags: ["App"] },
+    { name: "html-css-javascript", description: "Web dev experiments.", url: "https://github.com/thirumalx/html-css-javascript", homepage: "https://thirumalx.github.io/html-css-javascript/", category: "Web & Full Stack", tags: ["HTML/CSS/JS"] },
     { name: "selenium", description: "Browser automation tests.", url: "https://github.com/thirumalx/selenium", category: "Web & Full Stack", tags: ["Testing"] },
-    { name: "url-shorten", description: "URL Shortener service.", url: "https://github.com/thirumalx/url-shorten", category: "Web & Full Stack", tags: ["App"] },
-    { name: "bulk-email-ui", description: "UI for bulk email sender.", url: "https://github.com/thirumalx/bulk-email-ui", category: "Web & Full Stack", tags: ["UI"] },
-    { name: "react-tutorial", description: "React JS tutorial.", url: "https://github.com/thirumalx/react-tutorial", category: "Web & Full Stack", tags: ["React"] },
-    { name: "d3js-tutorial", description: "Data visualization with D3.js.", url: "https://github.com/thirumalx/d3js-tutorial", category: "Web & Full Stack", tags: ["D3.js"] },
+    { name: "url-shorten", description: "URL Shortener service.", url: "https://github.com/thirumalx/url-shorten", homepage: "https://thirumalx.github.io/url-shorten/", category: "Web & Full Stack", tags: ["App"] },
+    { name: "bulk-email-ui", description: "UI for bulk email sender.", url: "https://github.com/thirumalx/bulk-email-ui", homepage: "https://thirumalx.github.io/bulk-email-ui/", category: "Web & Full Stack", tags: ["UI"] },
+    { name: "react-tutorial", description: "React JS tutorial.", url: "https://github.com/thirumalx/react-tutorial", homepage: "https://thirumalx.github.io/react-tutorial/", category: "Web & Full Stack", tags: ["React"] },
+    { name: "d3js-tutorial", description: "Data visualization with D3.js.", url: "https://github.com/thirumalx/d3js-tutorial", homepage: "https://thirumalx.github.io/d3js-tutorial/", category: "Web & Full Stack", tags: ["D3.js"] },
     { name: "flask-learn", description: "Learning Flask (Python web).", url: "https://github.com/thirumalx/flask-learn", category: "Web & Full Stack", tags: ["Python", "Flask"] },
     { name: "flask-quick-reference", description: "Flask cheat sheet.", url: "https://github.com/thirumalx/flask-quick-reference", category: "Web & Full Stack", tags: ["Python", "Flask"] },
-    { name: "www.thirumal.tech", description: "Source for personal website.", url: "https://github.com/thirumalx/www.thirumal.tech", category: "Web & Full Stack", tags: ["Website"] },
+    { name: "www.thirumal.tech", description: "Source for personal website.", url: "https://github.com/thirumalx/www.thirumal.tech", homepage: "https://www.thirumal.tech/", category: "Web & Full Stack", tags: ["Website"] },
 
     // Security
     { name: "cryptography", description: "Cryptography concepts.", url: "https://github.com/thirumalx/cryptography", category: "Security", tags: ["Crypto"] },
-    { name: "cryptography-playground", description: "Crypto algorithms playground.", url: "https://github.com/thirumalx/cryptography-playground", category: "Security", tags: ["Crypto"] },
+    { name: "cryptography-playground", description: "Crypto algorithms playground.", url: "https://github.com/thirumalx/cryptography-playground", homepage: "https://thirumalx.github.io/cryptography-playground/", category: "Security", tags: ["Crypto"] },
     { name: "pwned-password", description: "Check pwned passwords.", url: "https://github.com/thirumalx/pwned-password", category: "Security", tags: ["Security"] },
     { name: "oauth-resource-server", description: "OAuth2 Resource Server.", url: "https://github.com/thirumalx/oauth-resource-server", category: "Security", tags: ["OAuth2"] },
     { name: "authorize-server", description: "Authorization Server.", url: "https://github.com/thirumalx/authorize-server", category: "Security", tags: ["Auth"] },
-    { name: "DecodeCaptcha", description: "Captcha decoding tools.", url: "https://github.com/thirumalx/DecodeCaptcha", category: "Security", tags: ["Tools"] },
+    { name: "DecodeCaptcha", description: "Captcha decoding tools.", url: "https://github.com/thirumalx/DecodeCaptcha", homepage: "https://thirumalx.github.io/DecodeCaptcha/", category: "Security", tags: ["Tools"] },
 
     // Blockchain
     { name: "tezos", description: "Tezos blockchain resources.", url: "https://github.com/thirumalx/tezos", category: "Blockchain", tags: ["Tezos"] },
@@ -111,19 +111,19 @@ const projects = [
     { name: "CosmicWatch-Desktop-Muon-Detector", description: "Muon detector software.", url: "https://github.com/thirumalx/CosmicWatch-Desktop-Muon-Detector", category: "AI & Data Science", tags: ["Physics"] },
 
     // OS & Scripting
-    { name: "linux-guide", description: "Guide to Linux commands.", url: "https://github.com/thirumalx/linux-guide", category: "OS & Scripting", tags: ["Linux"] },
+    { name: "linux-guide", description: "Guide to Linux commands.", url: "https://github.com/thirumalx/linux-guide", homepage: "https://thirumalx.github.io/linux-guide/", category: "OS & Scripting", tags: ["Linux"] },
     { name: "bash-script", description: "Useful Bash scripts.", url: "https://github.com/thirumalx/bash-script", category: "OS & Scripting", tags: ["Bash"] },
-    { name: "installation_guide", description: "Software installation guides.", url: "https://github.com/thirumalx/installation_guide", category: "OS & Scripting", tags: ["Setup"] },
+    { name: "installation_guide", description: "Software installation guides.", url: "https://github.com/thirumalx/installation_guide", homepage: "https://thirumalx.github.io/installation_guide/", category: "OS & Scripting", tags: ["Setup"] },
     { name: "shell_script", description: "Shell scripting examples.", url: "https://github.com/thirumalx/shell_script", category: "OS & Scripting", tags: ["Shell"] },
 
     // Learning & Misc
-    { name: "system-design", description: "System Design resources.", url: "https://github.com/thirumalx/system-design", category: "Learning & Misc", tags: ["Architecture"] },
-    { name: "java-learning", description: "Java learning path.", url: "https://github.com/thirumalx/java-learning", category: "Learning & Misc", tags: ["Java"] },
+    { name: "system-design", description: "System Design resources.", url: "https://github.com/thirumalx/system-design", homepage: "https://thirumalx.github.io/system-design/", category: "Learning & Misc", tags: ["Architecture"] },
+    { name: "java-learning", description: "Java learning path.", url: "https://github.com/thirumalx/java-learning", homepage: "https://thirumalx.github.io/java-learning/", category: "Learning & Misc", tags: ["Java"] },
     { name: "excel-to-ics", description: "Excel to ICS converter.", url: "https://github.com/thirumalx/excel-to-ics", category: "Learning & Misc", tags: ["Tools"] },
-    { name: "bar-qr-code", description: "Barcode and QR code generation.", url: "https://github.com/thirumalx/bar-qr-code", category: "Learning & Misc", tags: ["Tools"] },
+    { name: "bar-qr-code", description: "Barcode and QR code generation.", url: "https://github.com/thirumalx/bar-qr-code", homepage: "https://thirumalx.github.io/bar-qr-code/", category: "Learning & Misc", tags: ["Tools"] },
     { name: "Project-Blueprints", description: "Blueprints for various projects.", url: "https://github.com/thirumalx/Project-Blueprints", category: "Learning & Misc", tags: ["Planning"] },
     { name: "automate-cumbersome-routine-work", description: "Automation scripts.", url: "https://github.com/thirumalx/automate-cumbersome-routine-work", category: "Learning & Misc", tags: ["Automation"] },
-    { name: "resume", description: "Resume templates/resources.", url: "https://github.com/thirumalx/resume", category: "Learning & Misc", tags: ["Career"] },
+    { name: "resume", description: "Resume templates/resources.", url: "https://github.com/thirumalx/resume", homepage: "https://thirumalx.github.io/resume/", category: "Learning & Misc", tags: ["Career"] },
     { name: "M-Thirumal", description: "Personal profile repo.", url: "https://github.com/thirumalx/M-Thirumal", category: "Learning & Misc", tags: ["Profile"] },
     { name: "handy-programs", description: "Collection of handy programs.", url: "https://github.com/thirumalx/handy-programs", category: "Learning & Misc", tags: ["Tools"] },
     { name: "CustomSmsSender", description: "SMS sending utility.", url: "https://github.com/thirumalx/CustomSmsSender", category: "Learning & Misc", tags: ["Tools"] },
@@ -131,7 +131,7 @@ const projects = [
     { name: "rust_tutorial", description: "Rust programming tutorial.", url: "https://github.com/thirumalx/rust_tutorial", category: "Learning & Misc", tags: ["Rust"] },
     { name: "futurology", description: "Notes on futurology.", url: "https://github.com/thirumalx/futurology", category: "Learning & Misc", tags: ["Notes"] },
     { name: "software_architect_solution", description: "Software architecture solutions.", url: "https://github.com/thirumalx/software_architect_solution", category: "Learning & Misc", tags: ["Architecture"] },
-    { name: "coding-best-practices", description: "Best practices in coding.", url: "https://github.com/thirumalx/coding-best-practices", category: "Learning & Misc", tags: ["Best Practices"] },
+    { name: "coding-best-practices", description: "Best practices in coding.", url: "https://github.com/thirumalx/coding-best-practices", homepage: "https://thirumalx.github.io/coding-best-practices/", category: "Learning & Misc", tags: ["Best Practices"] },
     { name: "math", description: "Mathematics resources.", url: "https://github.com/thirumalx/math", category: "Learning & Misc", tags: ["Math"] },
     { name: "book", description: "Book recommendations/notes.", url: "https://github.com/thirumalx/book", category: "Learning & Misc", tags: ["Books"] },
     { name: "etag", description: "Understanding ETags.", url: "https://github.com/thirumalx/etag", category: "Learning & Misc", tags: ["Web"] },
@@ -140,5 +140,5 @@ const projects = [
     { name: "pdf-book", description: "PDF book collection.", url: "https://github.com/thirumalx/pdf-book", category: "Learning & Misc", tags: ["Books"] },
     { name: "link", description: "Useful links collection.", url: "https://github.com/thirumalx/link", category: "Learning & Misc", tags: ["Resources"] },
     { name: "messenger", description: "Messenger app concept.", url: "https://github.com/thirumalx/messenger", category: "Learning & Misc", tags: ["App"] },
-    { name: "coding-interview-university", description: "Interview prep materials.", url: "https://github.com/thirumalx/coding-interview-university", category: "Learning & Misc", tags: ["Interview"] }
+    { name: "coding-interview-university", description: "Interview prep materials.", url: "https://github.com/thirumalx/coding-interview-university", homepage: "https://thirumalx.github.io/coding-interview-university/", category: "Learning & Misc", tags: ["Interview"] },
 ];
