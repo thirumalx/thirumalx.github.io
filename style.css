@@ -80,6 +80,7 @@ h1 {
     margin-bottom: 0.5rem;
     background: linear-gradient(to right, #38bdf8, #818cf8);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.02em;
 }
@@ -258,15 +259,21 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.folder-icon {
+.tech-icon {
     color: var(--accent-color);
-    font-size: 2rem;
     transition: var(--transition);
+    background: rgba(56, 189, 248, 0.1);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.project-card:hover .folder-icon {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.5));
+.project-card:hover .tech-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: rgba(56, 189, 248, 0.2);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
 }
 
 .external-link {
