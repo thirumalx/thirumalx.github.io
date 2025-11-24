@@ -19,6 +19,24 @@
     box-sizing: border-box;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(56, 189, 248, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(56, 189, 248, 0.4);
+}
+
 body {
     font-family: var(--font-main);
     background-color: var(--bg-color);
@@ -88,6 +106,40 @@ h1 {
     transform: translateY(-3px);
 }
 
+/* Search Bar */
+.search-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: var(--glass-border);
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    pointer-events: none;
+}
+
 /* Controls (Vertical Navigation) */
 .controls {
     display: flex;
@@ -108,7 +160,6 @@ h1 {
     transition: var(--transition);
     text-align: left;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-family: var(--font-main);
     font-size: 0.95rem;
@@ -122,16 +173,24 @@ h1 {
 .filter-btn.active {
     background: rgba(56, 189, 248, 0.1);
     color: var(--accent-color);
-    box-shadow: none;
-    /* Removed shadow for cleaner sidebar look */
 }
 
-.filter-btn .count {
-    font-size: 0.8rem;
+.btn-icon {
+    margin-right: 0.75rem;
+    opacity: 0.8;
+}
+
+.label {
+    flex-grow: 1;
+}
+
+.count {
+    font-size: 0.75rem;
     opacity: 0.7;
     background: rgba(255, 255, 255, 0.1);
     padding: 0.1rem 0.4rem;
     border-radius: 1rem;
+    margin-left: 0.5rem;
 }
 
 .filter-btn.active .count {
@@ -183,8 +242,9 @@ h1 {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(56, 189, 248, 0.4);
+    background: rgba(30, 41, 59, 0.85);
 }
 
 .project-card:hover::before {
@@ -201,15 +261,23 @@ h1 {
 .folder-icon {
     color: var(--accent-color);
     font-size: 2rem;
+    transition: var(--transition);
+}
+
+.project-card:hover .folder-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.5));
 }
 
 .external-link {
     color: var(--text-secondary);
     font-size: 1.25rem;
     transition: var(--transition);
+    opacity: 0.7;
 }
 
-.external-link:hover {
+.project-card:hover .external-link {
+    opacity: 1;
     color: var(--accent-color);
 }
 
@@ -241,6 +309,13 @@ h1 {
     background: rgba(56, 189, 248, 0.1);
     padding: 0.2rem 0.5rem;
     border-radius: 0.25rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.project-card:hover .tag {
+    border-color: rgba(56, 189, 248, 0.3);
+    background: rgba(56, 189, 248, 0.15);
 }
 
 /* Footer */
